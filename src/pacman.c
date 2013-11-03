@@ -3,6 +3,7 @@
 #include "grid.h"
 #include "image.h"
 #include "game.h"
+#include "audio.h"
 
 void pacman_init(struct Pacman* player, struct Anim* anims)
 {
@@ -52,14 +53,13 @@ void pacman_reset(struct Pacman* player)
 
 void pacman_update(struct Pacman* player, struct Grid* grid)
 {
+  uint8_t has_eaten = 0;
+
   if(player->dying == 1)
   {
     SetWakka(0);
     return;
   }
-
-
-  uint8_t has_eaten = 0;
 
   player->speed_ = 3.0f * get_pacman_speed();
   player->draw_pos_f_.x += player->speed_ * player->dir_.x;

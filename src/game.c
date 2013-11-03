@@ -25,7 +25,7 @@ uint8_t level;
 uint8_t stage;
 int32_t stage_times[7];
 uint32_t score;
-uint32_t high_score;
+static uint32_t high_score;
 uint32_t level_time;
 uint8_t remaining_dots;
 uint8_t remaining_lives;

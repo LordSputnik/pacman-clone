@@ -22,7 +22,8 @@ float get_pacman_speed();
 struct Pacman* get_pacman();
 struct Grid* get_grid();
 
-void kill_pacman();
+void start_kill_pacman();
+void end_kill_pacman();
 
 void set_remaining_dots(uint8_t dot_count);
 void dec_remaining_dots();

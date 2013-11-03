@@ -1,8 +1,8 @@
 #include "image.h"
+#include <stdio.h>
 
 int load_image(const char* imgName, struct Image* imglist, uint8_t* imgCount)
 {
-  puts("Seg fault.");
   struct Image * curImg = imglist + (*imgCount);
 
   SDL_Surface* temp = IMG_Load(imgName);

@@ -3,7 +3,7 @@
 
 char loaded = 0;
 
-struct high_score_t high_score[10];
+static struct high_score_t high_score[10];
 
 void load_high_scores()
 {

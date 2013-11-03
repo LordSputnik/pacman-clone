@@ -6,6 +6,9 @@
 void InitSound(void);
 void DestroySound(void);
 
+void SetWakka(uint8_t on);
+void UpdateWakka(void);
+
 void PacmanDie(void);
 uint8_t isPacmanDying(void);
 void PacmanDead(void);
